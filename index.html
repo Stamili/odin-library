@@ -8,6 +8,41 @@
     <title>Library</title>
 </head>
 <body>
- 
+    <header>
+        <h1>My Library</h1>
+        <button id="new-book-btn">New Book</button>
+    </header>
+    <main id="library-container"></main>
+    
+    <dialog id="book-dialog">
+        <form id="book-form" method="dialog">
+            <h2>Add a Book</h2>
+
+            <label>
+                Title
+                <input type="text" name="title" required>
+            </label>
+
+            <label>
+                Author
+                <input type="text" name="author" required>
+            </label>
+
+            <label>
+                Year
+                <input type="number" name="year" required>
+            </label>
+
+            <label class="checkbox-label">
+                <input type="checkbox" name="read">
+                Already read
+            </label>
+
+            <div class="dialog-buttons">
+                <button type="submit">Add</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+            </div>
+        </form>
+    </dialog>
 </body>
 </html>
